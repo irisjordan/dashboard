@@ -1,0 +1,87 @@
+.mat-card {
+    margin: 50px auto;
+    width: 950px;
+}
+
+.sightings-card {
+    color: #555;
+    min-height: 160px;
+    padding: 14px 0 14px 14px;
+
+    .select-hero {
+        font-size: 16px;
+        position: absolute;
+        right: 10px;
+        text-align: right;
+        text-transform: none;
+        top: 0;
+        width: 125px;
+
+        ::ng-deep .mat-select-value-text {
+            color: #777;
+            padding-right: 5px;
+        }
+        ::ng-deep .mat-input-underline {
+            display: none;
+        }
+    }
+
+    .map, .sightings {
+        display: inline-block;
+    }
+
+    .map {  
+        height: 450px;
+        margin-top: 20px;
+        padding-left: 10px;
+        position: relative;
+        width: 680px;
+    }
+
+    .sightings {
+        border: 1px solid #eee;
+        color: #777;
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;
+        padding-left: 13px;
+        vertical-align: top;
+        width: 180px;
+    }
+
+    .dot {
+        background-color: #E91E63;
+        border-radius: 5px;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+    }
+
+    .row {
+        height: 24px;
+        line-height: 24px;
+    }
+}
+
+::ng-deep path:hover {
+    fill-opacity: .7;
+}
+
+::ng-deep div.map-tooltip { 
+    background: rgba(97, 97, 97, .9);   
+    border: 0px;      
+    border-radius: 2px;  
+    color: #fff;
+    font-size: 12px;    
+    left: 100px;
+    min-height: 28px; 
+    padding: 2px;                  
+    pointer-events: none;  
+    position: absolute;              
+    text-align: center;  
+    top: 100px;
+    width: 60px;
+    z-index: 8888;    
+}
+    

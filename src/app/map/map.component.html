@@ -1,0 +1,43 @@
+<mat-card class="sightings-card">
+    <mat-card-title>
+    Hero Sightings
+        <mat-form-field class="select-hero">
+            <mat-select [formControl]="heroSelect" (selectionChange)="drawHeroCircles()">
+                <mat-option value="batman">Batman</mat-option>
+                <mat-option value="wonderwoman">Wonder Woman</mat-option>
+                <mat-option value="thor">Thor</mat-option>
+                <mat-option value="wolverine">Wolverine</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-title>
+    <mat-card-content>
+        <div class="map">
+            <svg id="hero-sighting-svg"></svg>
+        </div>
+        <div class="sightings" *ngIf="heroSelect.value=='batman'">
+            <div class="row" *ngFor="let city of heroData.batman">
+                <span class="dot"> </span>
+                <span class="sightings-name">{{ city }}</span>
+            </div>
+        </div>
+        <div class="sightings" *ngIf="heroSelect.value=='wonderwoman'">
+            <div class="row" *ngFor="let city of heroData.wonderwoman">
+                <span class="dot"> </span>
+                <span class="sightings-name">{{ city }}</span>
+            </div>
+        </div>
+        <div class="sightings" *ngIf="heroSelect.value=='thor'">
+            <div class="row" *ngFor="let city of heroData.thor">
+                <span class="dot"> </span>
+                <span class="sightings-name">{{ city }}</span>
+            </div>
+        </div>
+        <div class="sightings" *ngIf="heroSelect.value=='wolverine'">
+            <div class="row" *ngFor="let city of heroData.wolverine">
+                <span class="dot"> </span>
+                <span class="sightings-name">{{ city }}</span>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+

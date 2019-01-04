@@ -1,0 +1,20 @@
+<mat-card class="chart-container">
+	<mat-card-title class="chart-title">
+		<ng-content select="[chart-title]"></ng-content>
+	</mat-card-title>
+	<mat-card-content>
+		<div class="chart">
+			<div class="chart-total" *ngIf="chartType == 'doughnut'">
+				Total
+				<div class="chart-total-number {{totalFontSize}}">{{ chartTotal | number }}</div>
+			</div>
+			<canvas id="chart-canvas"></canvas>
+		</div>
+		<div class="details">
+			<div class="row" *ngFor="let i of data">
+				<span class="channel">{{ i.name }}</span>
+				<span class="metric">{{ i.metric ? (i.metric | number) : '-'}}</span>
+			</div>
+		</div>
+	</mat-card-content>
+</mat-card>
