@@ -1,0 +1,17 @@
+<mat-card class="metric">
+    <mat-card-title class="metric-title">
+        <ng-content select="[metric-title]"></ng-content>
+    </mat-card-title>
+    <mat-card-content>
+        <div *ngIf="data.type == 'percent'" class="metric-value {{metricFontSize}} {{ data.status }}">
+            {{ data.value ? (data.value/100 | percent:'1.0-0') : '-' }}
+        </div>
+        <div *ngIf="data.type == 'currency'" class="metric-value {{metricFontSize}} {{ data.status }}">
+            {{ data.value ? (data.value | currency:'USD':'symbol-narrow':'1.0-0') : '-' }}
+        </div>
+        <div *ngIf="!data.type" class="metric-value {{metricFontSize}} {{ data.status }}">
+            {{ data.value ? (data.value | number) : '-' }}{{ data.value ? data.postFix : '' }}
+        </div>
+    </mat-card-content>
+</mat-card>
+

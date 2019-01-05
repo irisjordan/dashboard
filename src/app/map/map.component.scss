@@ -1,20 +1,13 @@
-.mat-card {
-    margin: 50px auto;
-    width: 950px;
-}
-
 .sightings-card {
     color: #555;
-    min-height: 160px;
-    padding: 14px 0 14px 14px;
 
     .select-hero {
         font-size: 16px;
         position: absolute;
-        right: 10px;
+        right: 30px;
         text-align: right;
         text-transform: none;
-        top: 0;
+        top: 5px;
         width: 125px;
 
         ::ng-deep .mat-select-value-text {
@@ -31,11 +24,11 @@
     }
 
     .map {  
-        height: 450px;
+        height: 350px;
         margin-top: 20px;
         padding-left: 10px;
         position: relative;
-        width: 680px;
+        width: 750px;
     }
 
     .sightings {

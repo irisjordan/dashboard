@@ -1,6 +1,6 @@
-<mat-card class="sightings-card">
-    <mat-card-title>
-    Hero Sightings
+<!-- <mat-card class="sightings-card"> -->
+<div class="sightings-card">
+    <div>
         <mat-form-field class="select-hero">
             <mat-select [formControl]="heroSelect" (selectionChange)="drawHeroCircles()">
                 <mat-option value="batman">Batman</mat-option>
@@ -9,8 +9,8 @@
                 <mat-option value="wolverine">Wolverine</mat-option>
             </mat-select>
         </mat-form-field>
-    </mat-card-title>
-    <mat-card-content>
+    </div>
+    <div>
         <div class="map">
             <svg id="hero-sighting-svg"></svg>
         </div>
@@ -38,6 +38,6 @@
                 <span class="sightings-name">{{ city }}</span>
             </div>
         </div>
-    </mat-card-content>
-</mat-card>
+    </div>
+</div>
 

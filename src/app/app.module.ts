@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ChartComponent } from './chart/chart.component';
 import { MapComponent } from './map/map.component';
+import { MetricComponent } from './metric/metric.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ChartComponent,
-    MapComponent
+    MapComponent,
+    MetricComponent
   ],
   imports: [
     BrowserModule,

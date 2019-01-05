@@ -17,8 +17,8 @@ export class MapComponent implements OnInit, AfterViewInit {
     minHero: number;
     maxHero: number;
 
-    mapWidth = 680;
-    mapHeight = 450;
+    mapWidth = 750;
+    mapHeight = 350;
 
     mapProjection: any;
     mapPath: any;
@@ -35,7 +35,7 @@ export class MapComponent implements OnInit, AfterViewInit {
     ngAfterViewInit() {
         // D3 Projection
         this.mapProjection = d3.geoEquirectangular()
-            .translate([this.mapWidth / 2, this.mapHeight / 3])
+            .translate([this.mapWidth / 2, this.mapHeight / 2])
             .scale([100]);
 
         // Path

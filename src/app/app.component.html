@@ -1,6 +1,6 @@
 <header>
 	<div title>
-		My Dashboard
+		Dashboard
 	</div>
 </header>
 
@@ -36,13 +36,36 @@
 		
 	</mat-card>
 
-	
-	<app-map [heroData]="sightingsData"></app-map>
-	
+	<mat-card class="bottom-margin">
+		<mat-card-title>Hero Sightings</mat-card-title>
+		<app-map [heroData]="sightingsData"></app-map>
+	</mat-card>
 
 	<mat-card>
 		<mat-card-title>Metrics</mat-card-title>
-		<button mat-raised-button color="accent">Accent</button>
+		<mat-card-content>
+			<div class="kpi-basic">
+				<metric [data]="metric1">
+					<div metric-title>Metric 1</div>
+				</metric>
+			</div>
+			<div class="kpi-basic">
+				<metric [data]="metric2">
+					<div metric-title>Metric 2</div>
+				</metric>
+			</div>
+			<div class="kpi-basic">
+				<metric [data]="metric3">
+					<div metric-title>Metric 3</div>
+				</metric>
+			</div>
+			<div class="kpi-basic right">
+				<metric [data]="metric4">
+					<div metric-title>Metric 4</div>
+				</metric>
+			</div>
+
+		</mat-card-content>
 	</mat-card>
 </div>
 

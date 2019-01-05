@@ -23,6 +23,11 @@ export class AppComponent {
 
   public sightingsData: any;
   
+  public metric1: any;
+  public metric2: any;
+  public metric3: any;
+  public metric4: any;
+  
   ngOnInit() {
     this.chartData1 = [124127, 99152, 40233, 30871];
     this.labels1 = ["Item 1", "Item 2", "Item 3", "Item 4"];
@@ -82,6 +87,29 @@ export class AppComponent {
           'Beijing'
       ]
     };
+
+    this.metric1 = [];
+    this.metric2 = [];
+    this.metric3 = [];
+    this.metric4 = [];
+    
+
+    this.metric1.value = 45;
+    this.metric1.type = 'percent';
+    this.metric1.status = 'positive';
+
+    this.metric2.value = 163;
+    this.metric2.type = 'currency';
+    this.metric2.status = 'negative';
+
+    this.metric3.value = 59;
+   
+    this.metric4.value = 1034;
+    this.metric4.type = 'currency';
+    this.metric4.status = 'negative';
+
+
+    console.log(this.metric1);
 
   }
 }

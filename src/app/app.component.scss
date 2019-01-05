@@ -31,3 +31,13 @@
         margin-left: 20px;
     }
 }
+
+.kpi-basic {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+
+    &.right {
+        margin-right: 0;
+    }
+}
