@@ -9,24 +9,24 @@
 		<mat-card-title>Graphs</mat-card-title>
 		<mat-card-content>
 			<div class="row">
-				<div class="kpi">
+				<div class="column">
 					<chart [data]="details1" [chartType]="'doughnut'" [chartData]="chartData1" [chartLabels]="labels1" [chartTotal]="total1">
 						<div chart-title>Example Doughnut Chart 1</div>
 					</chart>
 				</div>
-				<div class="kpi right">
+				<div class="column right">
 					<chart [data]="details2" [chartType]="'line'" [chartData]="chartData2" [chartLabels]="labels2">
 						<div chart-title>Example Line Chart 1</div>
 					</chart>	
 				</div>
 			</div>
 			<div class="row">
-				<div class="kpi">
+				<div class="column">
 					<chart [data]="details3" [chartType]="'bar'" [chartData]="chartData3" [chartLabels]="labels3">
 						<div chart-title>Example Bar Chart 1</div>
 					</chart>			
 				</div>
-				<div class="kpi right">
+				<div class="column right">
 					<chart [data]="details1" [chartType]="'doughnut'" [chartData]="chartData1" [chartLabels]="labels1" [chartTotal]="total1">
 						<div chart-title>Example Doughnut Chart 2</div>
 					</chart>		
@@ -44,22 +44,22 @@
 	<mat-card>
 		<mat-card-title>Metrics</mat-card-title>
 		<mat-card-content>
-			<div class="kpi-basic">
+			<div class="column-small">
 				<metric [data]="metric1">
 					<div metric-title>Metric 1</div>
 				</metric>
 			</div>
-			<div class="kpi-basic">
+			<div class="column-small">
 				<metric [data]="metric2">
 					<div metric-title>Metric 2</div>
 				</metric>
 			</div>
-			<div class="kpi-basic">
+			<div class="column-small">
 				<metric [data]="metric3">
 					<div metric-title>Metric 3</div>
 				</metric>
 			</div>
-			<div class="kpi-basic right">
+			<div class="column-small right">
 				<metric [data]="metric4">
 					<div metric-title>Metric 4</div>
 				</metric>
