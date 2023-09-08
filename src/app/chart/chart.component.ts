@@ -33,7 +33,8 @@ export class ChartComponent implements OnInit {
                     datasets: [
                         {
                             data: this.chartData,
-                            borderColor: '#E91E63',
+                            //borderColor: '#E91E63',
+                            borderColor: '#1ea6bf',
                             fill: false
                         }
                     ]
@@ -65,7 +66,8 @@ export class ChartComponent implements OnInit {
                     datasets: [
                         {
                             data: this.chartData,
-                            backgroundColor: '#ef4fa6',
+                            //backgroundColor: '#ef4fa6',
+                            backgroundColor: '#2cbdd8',
                             fill: false
                         }
                     ]
@@ -110,7 +112,8 @@ export class ChartComponent implements OnInit {
                     datasets: [
                         {
                             data: this.chartData,
-                            backgroundColor: ['#E91E63', '#ef4fa6', '#f186c0', '#f5b6da']
+                            //backgroundColor: ['#E91E63', '#ef4fa6', '#f186c0', '#f5b6da']
+                            backgroundColor: ['#1ea6bf', '#2cbdd8', '#45d0ea', '#66dff5']
                         }
                     ]
                 },

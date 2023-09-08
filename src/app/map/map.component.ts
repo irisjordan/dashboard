@@ -107,7 +107,8 @@ export class MapComponent implements OnInit, AfterViewInit {
             .attr('r', (d) => {
                 return this.calculateRadius(d.metric);
             })
-                .style('fill', 'rgb(233,30,99)')
+                //.style('fill', 'rgb(233,30,99)')
+                .style('fill', 'rgb(30,166,191)')
                 .style('opacity', 0.85)
             // show tooltip
             .on('mouseover', (d) => {
